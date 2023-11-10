@@ -36,7 +36,7 @@ function init() {
 
 function getClient() {
   if (!redisClient) {
-    throw new Error('Redis client not initialized. Call initRedis() first.');
+    throw new Error('Redis client not initialized. Call init() first.');
   }
   return redisClient;
 }
