@@ -1,10 +1,14 @@
+require('dotenv').config()
+
+
 const express = require('express')
 const morgan = require('morgan')
-require('dotenv').config()
 const redis = require("./common/cache/redis")
+const mongo = require("./common/database/mongodb")
 
 // Inits
 redis.init();
+mongo.init();
 
 const app = express()
 app.use(morgan('dev'))
