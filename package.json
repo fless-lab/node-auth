@@ -1,0 +1,11 @@
+{
+  "name": "test-tdd",
+  "version": "1.0.0",
+  "description": "Test pour voir comment l'architecture adoptée fonctionne en vrai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raouf",
+  "license": "ISC"
+}
