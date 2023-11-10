@@ -4,17 +4,27 @@
   "description": "Test pour voir comment l'architecture adoptée fonctionne en vrai",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require utilities/test-setup.js tests/**/*.spec.js",
     "start": "nodemon src/index.js"
   },
   "author": "Raouf",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.7.2",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongoose": "^8.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
     "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.10",
+    "@types/mocha": "^10.0.4",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "sinon": "^17.0.1",
+    "supertest": "^6.3.3"
   }
 }
