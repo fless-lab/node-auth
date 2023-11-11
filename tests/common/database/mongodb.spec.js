@@ -8,7 +8,8 @@ describe('🧪 MongoDB Connections', () => {
 
   let db;
 
-  beforeEach(async () => {    
+  beforeEach(async () => {   
+    await mongodb.close();  //Ensure there is no active connection already espablished
     await mongodb.init(uri, dbName);
     db = await mongodb.getClient();
   });
@@ -20,5 +21,4 @@ describe('🧪 MongoDB Connections', () => {
   it('connects without error', async () => {
     expect(db.readyState).to.equal(1);
   });
-
 });
