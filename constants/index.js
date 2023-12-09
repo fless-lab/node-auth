@@ -1,0 +1,8 @@
+
+
+module.exports = {
+    OTP_PURPOSE:{
+        ACCOUNT_VERIFICATION:"ACCOUNT_VERIFICATION",
+        FORGOT_PASSWORD:"FORGOT_PASSWORD"
+    }
+}

@@ -15,7 +15,7 @@ describe('🧪 MongoDB Connections', () => {
   });
 
   afterEach(async () => {
-    db = await mongodb.close();
+    // db = await mongodb.close();
   });
 
   it('connects without error', async () => {
